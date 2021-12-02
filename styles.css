@@ -1,14 +1,45 @@
-button {
+body {
+  background-color: rgb(187, 187, 187);
+}
+
+.new-game-btn {
+  background-color:red;
+  color: white;
+  border-radius: 15%;
+  border: 2px solid black;
+  font-weight: bold;
+  font-style: monospace;
+}
+.new-game-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+.theme-select {
+  position: relative;
+  left: 30%;
+  color: black;
+  font-weight: bold;
+}
+
+  /* Begin themes */
+
+  #select-classic {
+    background-color: #0c80f3;
+    color: white;
+  }
+
+  #classic{
     background-color: #0c80f3;
     border: 6px solid #0ff166;
     border-radius: 10px;
   }
-  
-  .game-board {
+
+  .game-board-classic {
     width: 600px;
     height: 600px;
     margin: 0 auto;
-    background-color: #34495e;
+    background-color: #226db8;
     color: rgb(204, 28, 28);
     border: 6px solid #0b0d0f;
     border-radius: 10px;
@@ -17,7 +48,7 @@ button {
     grid-template-columns: 1fr;
   }
   
-  .grid-row {
+  .grid-row-classic {
     border: 6px solid #739dc7;
     border-radius: 6px;
     font-family: Helvetica;
@@ -26,12 +57,119 @@ button {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(175, 70, 70);
+    background-color:black;
+  }
+
+  #select-dark {
+    background-color: #111111;
+    color: #8000c5;
+  }
+
+  #dark  {
+    background-color: #3F0071;
+    border: 6px solid #150050;
+    border-radius: 10px;
+  }
+  .game-board-dark {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #111111;
+    color: #610094;
+    border: 6px solid #150050;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   
+  .grid-row-dark {
+    border: 6px solid #150050;
+    border-radius: 6px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:black;
+  }
+
+  #select-light {
+    background-color: #B5DEFF;
+    color: #a991f0;
+  }
+
+  #light  {
+    background-color: #B5DEFF;
+    border: 6px solid #C1FFD7;
+    border-radius: 10px;
+  }
+  
+  .game-board-light {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #FCFFA6;
+    color: #CAB8FF;
+    border: 6px solid #C1FFD7;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-row-light {
+    border: 6px solid #C1FFD7;
+    border-radius: 6px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:black;
+  }
+
+  #select-colourful {
+    background-color: #F7EA00;
+    color: #BE0000;
+  }
+
+  #colourful  {
+    background-color: #F7EA00;
+    border: 6px solid #E48900;
+    border-radius: 10px;
+  }
+  
+  .game-board-colourful {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #9EDE73;
+    color: #BE0000;
+    border: 6px solid #E48900;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-row-colourful {
+    border: 6px solid #E48900;
+    border-radius: 6px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+  }
+  /* End themes */
   .block {
     background-color: rgb(219, 28, 28);
-    border: 6px solid green;
+    border: 6px solid black;
     border-radius: 6px;
     font-family: Helvetica;
     font-weight: bold;
@@ -40,9 +178,13 @@ button {
   
   .red {
     color: red;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   .white {
     color: white;
+    font-size: 20px;
+    font-weight: bold;
   }
   
